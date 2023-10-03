@@ -1,0 +1,73 @@
+@use "../../sass/_variables.scss" as *;
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("../../assets/AvantGarde-Bold.otf");
+}
+
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 93px;
+  margin-left: 150px;
+  margin-bottom: 140px;
+
+  &__text {
+    margin-right: 134px;
+    h1 {
+      color: $brand-color;
+      font-family: "AvantGarde";
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &-p {
+      color: $text;
+      margin-top: 41px;
+      margin-bottom: 51px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .schedule {
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+    color: $text;
+    transition: all 0.3s ease;
+
+    &__phone {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__text {
+      margin-left: 18px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  .schedule:hover {
+    transform: translateY(-2px);
+    color: #7c7779;
+  }
+
+  &__img {
+    display: flex;
+  }
+
+  .yellow-cat-1 {
+    margin-left: 50px;
+    margin-bottom: 200px;
+  }
+}

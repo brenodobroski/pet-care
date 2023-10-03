@@ -1,0 +1,65 @@
+@use "../../sass/_variables.scss" as *;
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("./assets/AvantGarde-Bold.otf");
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  color: $brand-color;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-bottom: 2px solid $brand-color;
+
+  &__logo-text {
+    font-family: "AvantGarde", sans-serif;
+    color: $brand-color;
+  }
+
+  &__links {
+    &-list {
+      list-style: none;
+      display: flex;
+      color: $brand-color;
+    }
+
+    &-item {
+      &:not(:first-child) {
+        margin-left: 66px;
+      }
+      transition: all 0.3s;
+    }
+
+    &-item:hover {
+      transform: translateY(-2px);
+      color: $brand-color;
+    }
+  }
+
+  &__links-link {
+    color: $brand-color;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+
+  &__signup {
+    display: flex;
+    align-items: center;
+    color: $brand-color;
+
+    &-icon {
+      margin-left: 12px;
+    }
+
+    transition: all 0.3s;
+  }
+
+  &__signup:hover {
+    transform: translateY(-2px);
+  }
+}

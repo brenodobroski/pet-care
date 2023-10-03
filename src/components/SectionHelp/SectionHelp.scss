@@ -1,0 +1,35 @@
+@use "../../sass/_variables.scss" as *;
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("../../assets/AvantGarde-Bold.otf");
+}
+
+.SectionHelp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 120px;
+  border-top: 2px solid #fff5e4;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-bottom: 147px;
+
+  &__h3 {
+    color: #948e90;
+    text-align: center;
+    font-family: "AvantGarde", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    margin-bottom: 25px;
+  }
+
+  &__h2 {
+    color: #070c4b;
+    text-align: center;
+    font-family: "AvantGarde", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+  }
+}

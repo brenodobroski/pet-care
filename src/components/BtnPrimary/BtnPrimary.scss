@@ -1,0 +1,31 @@
+@use "../../sass/_variables.scss" as *;
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("./assets/AvantGarde-Bold.otf");
+}
+
+.btn-primary {
+  background-color: $btn-color;
+  border: none;
+  border-radius: 80px;
+  padding: 25px 105px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+
+  .btn-icon {
+    rotate: (40deg);
+    margin-left: 5px;
+  }
+}
+
+.btn-primary:hover {
+  filter: drop-shadow(0px 5px 5px rgba(253, 91, 49, 0.5));
+  background-color: #fa6e4b;
+  transform: translateY(-2px);
+}

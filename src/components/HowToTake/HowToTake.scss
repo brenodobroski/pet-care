@@ -1,0 +1,33 @@
+@use "../../sass/_variables.scss" as *;
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("../../assets/AvantGarde-Bold.otf");
+}
+
+.HowToTake {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 51px 132px 61px 63px;
+  background-color: $background-section;
+  width: 1300px;
+  margin: 0 auto;
+  border-radius: 100px;
+
+  &__h2 {
+    color: $brand-color;
+    text-align: center;
+    font-family: "AvantGarde", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+
+  &__p {
+    color: #948e90;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}

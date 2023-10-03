@@ -1,0 +1,45 @@
+@use "../../sass/_variables.scss" as *;
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("./assets/AvantGarde-Bold.otf");
+}
+
+.SafeHands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    margin-left: 72px;
+  }
+
+  &__h2 {
+    color: $brand-color;
+    font-family: "AvantGarde", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 55px;
+  }
+
+  &__p {
+    color: #948e90;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 41px;
+  }
+
+  &__a {
+    color: #fd5b31;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration-line: underline;
+  }
+
+  &__icon {
+    rotate: (40deg);
+    margin-left: 10px;
+  }
+}
