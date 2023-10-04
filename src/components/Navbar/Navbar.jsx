@@ -1,7 +1,22 @@
+/* eslint-disable react/prop-types */
 import "./Navbar.scss";
 import { FaSignInAlt } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ home, services, training, madicare }) => {
+  const item = document.querySelectorAll(".Navbar__links-item");
+
+  item.forEach((nav) => {
+    nav.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      item.forEach((itemNav) => {
+        itemNav.classList.remove("active");
+      });
+
+      nav.classList.add("active");
+    });
+  });
+
   return (
     <div className="Navbar">
       <div className="Navbar__logo">
@@ -11,24 +26,40 @@ const Navbar = () => {
       </div>
       <div className="Navbar__links">
         <ul className="Navbar__links-list">
-          <li className="Navbar__links-item">
-            <a className="Navbar__links-link" href="">
+          <li
+            className="Navbar__links-item"
+            id="Navbar__item"
+            onClick={() => window.scrollTo({ top: 100, behavior: "smooth" })}
+          >
+            <a className="Navbar__links-link" href={home}>
               Home
             </a>
           </li>
-          <li className="Navbar__links-item">
-            <a className="Navbar__links-link" href="">
+          <li
+            className="Navbar__links-item"
+            id="Navbar__item"
+            onClick={() => window.scrollTo({ top: 2200, behavior: "smooth" })}
+          >
+            <a className="Navbar__links-link" href={services}>
               Services
             </a>
           </li>
-          <li className="Navbar__links-item">
-            <a className="Navbar__links-link" href="">
-              Training
+          <li
+            className="Navbar__links-item"
+            id="Navbar__item"
+            onClick={() => window.scrollTo({ top: 2900, behavior: "smooth" })}
+          >
+            <a className="Navbar__links-link" href={training}>
+              Stats
             </a>
           </li>
-          <li className="Navbar__links-item">
-            <a className="Navbar__links-link" href="">
-              Madi-care
+          <li
+            className="Navbar__links-item"
+            id="Navbar__item"
+            onClick={() => window.scrollTo({ top: 4400, behavior: "smooth" })}
+          >
+            <a className="Navbar__links-link" href={madicare}>
+              Reviews
             </a>
           </li>
         </ul>
