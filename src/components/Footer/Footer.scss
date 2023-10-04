@@ -1,0 +1,83 @@
+@use "../../sass/_variables.scss" as *;
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("./assets/AvantGarde-Bold.otf");
+}
+
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  &__h2 {
+    color: $brand-color;
+    text-align: center;
+    font-family: "AvantGarde";
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 46px;
+    margin-right: 184px;
+  }
+
+  &__h3 {
+    color: $brand-color;
+    font-family: "AvantGarde";
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  &__p {
+    color: #948e90;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 134px;
+    margin-bottom: 18px;
+  }
+
+  &__icons {
+    img {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+  &__span {
+    color: #fcd1e3;
+    font-family: "AvantGarde";
+  }
+
+  &__right {
+    display: flex;
+  }
+  &__col-a {
+    color: #948e90;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__right {
+    ul {
+      list-style: none;
+      margin-right: 150px;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  &__h4 {
+    color: $brand-color;
+    font-family: "AvantGarde";
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+}

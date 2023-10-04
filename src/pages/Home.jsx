@@ -1,6 +1,8 @@
+import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
 import HowToTake from "../components/HowToTake/HowToTake";
 import Navbar from "../components/Navbar/Navbar";
+import Newsletter from "../components/Newsletter/Newsletter";
 import OurServices from "../components/OurServices/OurServices";
 import Reviews from "../components/Reviews/Reviews";
 import SafeHands from "../components/SafeHands/SafeHands";
@@ -19,6 +21,8 @@ const Home = () => {
       <Stats />
       <SafeHands />
       <Reviews />
+      <Newsletter />
+      <Footer />
 
       <div>Home</div>
     </div>
